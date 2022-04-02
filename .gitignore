@@ -7,6 +7,5 @@ dist
 cypress/videos
 cypress/screenshots
 coverage
-.vscode
 yarn-error.log
 .husky
