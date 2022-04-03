@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.231.1/containers/typescript-node
 {
-	"name": "Node.js & TypeScript",
+	"name": "Conduit frontend",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
@@ -30,5 +30,11 @@
 	// "postCreateCommand": "yarn install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+
+	"runArgs": [
+		"--name=conduit_frontend",
+		// "--network=conduit_network",
+		"--hostname=frontend"
+	]
 }
